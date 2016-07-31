@@ -1,0 +1,36 @@
+<html>
+<head>
+  <title>D3 Assignment</title>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+  <link rel="stylesheet" href="./includes/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="./includes/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="http://d3js.org/d3.v3.js"></script>
+  <link rel='stylesheet' href='../includes/css/mystyles.css'/>
+</head>
+<body>
+<div class="tabbable">
+    <h1>Multi line and Bar chart</h1>
+    <ul class="nav nav-tabs my_nav">
+      <li class="active"><a href="#tab1" data-toggle="tab"><span class="glyphicon glyphicon-film"></span> India Chart</a></li>
+      <li><a href="#tab2" data-toggle="tab"><span class="glyphicon glyphicon-comment"></span> Asia Chart</a></li>
+    </ul>
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab1">
+            <h3>Multi series line chart of India Population</h3>
+                <acontent>
+                <div class="col_12" id="area1"></div>
+                </acontent>
+        </div> <!-- end of tab pane-->
+        <div class="tab-pane" id="tab2">
+            <h3>Stacked Bar chart of Asian Countries Population</h3>
+                <bcontent>
+                <div class="col_12" id="area2"></div>
+                </bcontent>
+        </div> <!-- end of tab pane-->
+    </div> <!-- end of tab content-->
+</div> <!-- end of tabbable-->
+<script src="js/script_d3.js"></script>
+</body>
+</html>

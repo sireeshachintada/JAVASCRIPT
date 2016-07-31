@@ -1,0 +1,73 @@
+/*Styling for Multi line series graph*/
+path {
+  fill: none;
+  stroke: green;
+  stroke-width: 3px;
+}
+.chart-line {
+    fill: none;
+    stroke: blue;
+}
+
+.chart-line-second {
+    fill: none;
+    stroke: orange;
+}
+  .axis text {
+    font-family: georgia;
+    font-size: 12pt;
+    text-align: left;
+  }
+  .axis .label {
+    font-size: 18pt;
+  }
+
+ .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+/*Styles for Stacked bar chart*/
+  .stack{
+    fill: rgb(24, 97, 27);
+  }
+
+  rect {
+  	-moz-transition: all 0.3s;
+  	-webkit-transition: all 0.3s;
+  	-o-transition: all 0.3s;
+  	transition: all 0.3s;
+  }
+  rect:hover{
+  	fill: #11110F;
+  }
+ .axis {
+   font: 10px sans-serif;
+ }
+
+/* Nav bar styles*/
+.my_nav{
+  font-size: 35px;
+  text-align: center;
+}
+
+/*Main heading*/
+h1{
+    color: #C70039;
+    font-size: 60px;
+    font-family: 'Cormorant', serif;
+    text-shadow: 5px 10px 10px #20C23B;
+    border-bottom: 1px solid black;
+    border-bottom-width: thick;
+    text-align: center;
+    font-style: bold;
+  }
+
+/*sub headings for pages*/
+h3{
+  color: black;
+  font-family: georgia;
+  text-align: center;
+  font-style: italic;
+}
