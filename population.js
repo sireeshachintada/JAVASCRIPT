@@ -25,6 +25,8 @@ if(count==0) {
 
   countryIndex = headers.indexOf("CountryName");
   indicatorIndex = headers.indexOf("IndicatorCode");
+  Year = headers.indexOf("Year");
+  Value = headers.indexOf("Value");
   India_Records.write("[ \n");
   Asia_records.write("[ \n");
   count++;
@@ -60,10 +62,19 @@ else { // traverse through rest of the file
 // function to collect and write data
 function writeToFile(currentline,writeLine,count) {
 var obj = {};
-for(var i=0;i<currentline.length;i++){
-  obj[headers[i]] = currentline[i]; // collect the data in objects
-}
-
+obj[headers[Year]] = currentline[Year];
+	if(currentline[indicatorIndex]==="SP.URB.TOTL"){
+		obj[headers[Value]] = currentline[Value];
+	}
+	if(currentline[indicatorIndex]==="SP.RUR.TOTL"){
+		obj[headers[Value]] = currentline[Value];
+	}
+	if(currentline[indicatorIndex]==="SP.RUR.TOTL.ZS"){
+		obj[headers[Value]] = currentline[Value];
+	}
+	if(currentline[indicatorIndex]==="SP.URB.TOTL.IN.ZS"){
+		obj[headers[Value]] = currentline[Value];
+	}
 if(count==1) {
 writeLine.write(JSON.stringify(obj)); // convert headers into JSON
 }
